@@ -1,17 +1,21 @@
 package com.seniorkot.data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "USERS")
 public class User {
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(name = "Login")
     private String login;
+
+    @Column(name = "Password")
     private String password; //TODO: make with hashcode
+
+    @Column(name = "E-mail")
     private String email;
 
     public User(){}

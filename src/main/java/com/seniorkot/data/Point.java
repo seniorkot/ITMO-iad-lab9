@@ -1,18 +1,24 @@
 package com.seniorkot.data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "POINTS")
 public class Point{
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(name = "X")
     private Double x;
+
+    @Column(name = "Y")
     private Double y;
+
+    @Column(name = "R")
     private Double r;
+
+    @Column(name = "Inside")
     private Boolean inside;
 
     public Point(){}
