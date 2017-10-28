@@ -1,4 +1,4 @@
-package com.seniorkot.data;
+package com.seniorkot.model;
 
 import javax.persistence.*;
 

@@ -1,5 +1,6 @@
-package com.seniorkot.data;
+package com.seniorkot.repository;
 
+import com.seniorkot.model.Point;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
