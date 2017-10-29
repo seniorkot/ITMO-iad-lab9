@@ -13,9 +13,9 @@ public class User {
     private String login;
 
     @Column(name = "Password")
-    private String password; //TODO: make with hashcode
+    private String password;
 
-    @Column(name = "E-mail")
+    @Column(name = "Email")
     private String email;
 
     public User(){}
