@@ -29,12 +29,11 @@ public class UserController {
 
         passwd = String.valueOf(passwd.hashCode());
 
-        User user = userService.getByLogin(login);
-        if (user != null){
-            return user;
+        if (userService.getByLogin(login) != null){
+            return null;
         }
 
-        user = new User(login, passwd, email);
+        User user = new User(login, passwd, email);
         userService.add(user);
         return user;
     }
