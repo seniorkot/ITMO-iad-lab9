@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
+//import java.util.List;
 
 @RestController
 @RequestMapping(value="/api")
@@ -17,10 +17,10 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping(value = "/user.get", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/user.all", method = RequestMethod.GET)
     public List<User> getAllUsers() {
         return userService.getAll();
-    }
+    }*/
 
     @RequestMapping(value = "/user.signup", method = RequestMethod.POST)
     public User signUp(@RequestParam(name = "login", required = true) String login,

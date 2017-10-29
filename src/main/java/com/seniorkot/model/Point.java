@@ -9,16 +9,16 @@ public class Point{
     @GeneratedValue
     private Long id;
 
-    @Column(name = "X")
+    @Column(name = "X", nullable = false)
     private Double x;
 
-    @Column(name = "Y")
+    @Column(name = "Y", nullable = false)
     private Double y;
 
-    @Column(name = "R")
+    @Column(name = "R", nullable = false)
     private Double r;
 
-    @Column(name = "Inside")
+    @Column(name = "Inside", nullable = false)
     private Boolean inside;
 
     public Point(){}

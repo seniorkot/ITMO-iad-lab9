@@ -28,4 +28,8 @@ public class PointService {
     public List<Point> getAll(){
         return pointRepository.findAll();
     }
+
+    public Point get(long id){
+        return pointRepository.findOne(id);
+    }
 }

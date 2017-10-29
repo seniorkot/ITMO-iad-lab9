@@ -9,13 +9,13 @@ public class User {
     @GeneratedValue
     private Long id;
 
-    @Column(name = "Login")
+    @Column(name = "Login", nullable = false)
     private String login;
 
-    @Column(name = "Password")
+    @Column(name = "Password", nullable = false)
     private String password;
 
-    @Column(name = "Email")
+    @Column(name = "Email", nullable = false)
     private String email;
 
     public User(){}
