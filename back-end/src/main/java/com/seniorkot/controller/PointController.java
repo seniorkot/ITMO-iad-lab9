@@ -37,7 +37,6 @@ public class PointController {
                           @RequestParam(name = "r", required = true) Double r,
                           @RequestParam(name = "login", required = true) String login,
                           @RequestParam(name = "passwd", required = true) String passwd){
-        passwd = String.valueOf(passwd.hashCode());
         if (userService.getByLoginAndPassword(login, passwd) == null){
             return null;
         }
